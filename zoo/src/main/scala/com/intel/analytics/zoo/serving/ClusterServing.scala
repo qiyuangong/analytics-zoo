@@ -310,8 +310,8 @@ object ClusterServing {
         timeStamp += microBatchLatency.toInt
 
         logger.info(microBatchSize +
-          " inputs predict ended, time elapsed " + microBatchLatency.toString)
-
+          " inputs predict ended, time elapsed " + microBatchLatency.toString
+          + "s throughput is -->" + microBatchThroughPut + " FPS")
       }
     }
 
