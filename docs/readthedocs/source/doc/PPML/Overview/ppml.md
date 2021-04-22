@@ -168,7 +168,7 @@ The result should look like: <br>
 
 ##### **Example 3: Spark-SQL on Graphene-SGX** 
 
-Before run TPC-H test in container we created, we should download and install [SBT](https://www.scala-sbt.org/download.html) and deploy a [HDFS](https://hadoop.apache.org/docs/r1.2.1/) for TPC-H output, then build and package TPC-H dataset according to [TPC-H](https://github.com/qiuxin2012/tpch-spark) with your needs. After packaged, check if we have `spark-tpc-h-queries_2.11-1.0.jar ` under `tpch-spark/target/scala-2.11`, if have, we package successfully.
+Before run TPC-H test in container we created, we should download and install [SBT](https://www.scala-sbt.org/download.html) and deploy a [HDFS](https://hadoop.apache.org/docs/r2.7.7/hadoop-project-dist/hadoop-common/ClusterSetup.html) for TPC-H dataset and output, then build the source codes with SBT and generate TPC-H dataset according to [TPC-H](https://github.com/qiuxin2012/tpch-spark). After packaged, check if we have `spark-tpc-h-queries_2.11-1.0.jar ` under `tpch-spark/target/scala-2.11`, if have, we package successfully.
 
 Copy TPC-H to container: <br>
 ```bash
